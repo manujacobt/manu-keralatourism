@@ -5,3 +5,9 @@
     margin-right:50%;
     text-align: justify;
 }
+
+
+.navbar-nav{
+    margin-left: 2%;
+    padding: 4px;
+}

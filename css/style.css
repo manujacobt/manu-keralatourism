@@ -1,14 +1,17 @@
 .myMargin{
-    margin-top: 2%;
-    margin-left: 18%;
+    margin-top: -55%;
+    margin-right: 1%;
+    float: right;
     border: 3px solid red;
-    height: fit-content;
-}
-/* .navbar-margin{
-    
+    /* height: fit-content;
 } */
+
+
+
 .navbar-nav{
     margin-left: 2%;
     padding: 4px;
 }
+
+
 
