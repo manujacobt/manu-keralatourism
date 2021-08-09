@@ -1,0 +1,14 @@
+.myMargin{
+    margin-top: 2%;
+    margin-left: 18%;
+    border: 3px solid red;
+    height: fit-content;
+}
+/* .navbar-margin{
+    
+} */
+.navbar-nav{
+    margin-left: 2%;
+    padding: 4px;
+}
+
