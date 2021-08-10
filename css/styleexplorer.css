@@ -1,11 +1,14 @@
 .myRef{
     text-align: center;
+    font-weight: bold;
+    
     
 }
 
 .myRef a{
-   color: green;
+   color: red;
    text-decoration: none;
+   
     
 }
 .navbar-nav{
