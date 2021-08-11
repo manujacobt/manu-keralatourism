@@ -7,6 +7,13 @@
     height: fit-content; */
 }
 
+.logo{
+    height: 50px;
+    padding-right: 15px;
+    padding-left: 10px;
+  }
+  
+
 
 
 .navbar-nav{

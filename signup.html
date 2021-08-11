@@ -34,60 +34,86 @@
 
 <body >
 
-    <div class="class=container-fluid">
+    <div class="container-fluid"style="background-color:cyan;">
 
-        <!-- Nav bar starts here -->
+       <!-- Nav bar starts here -->
 
             
-        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-            <div class="container-fluid">
-              <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html" style="margin-left:10px;padding:7px;">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="login.html" style="margin-left:10px;padding:7px;">Login</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="kerala-explorer.html" style="margin-left:10px;padding:7px;">kerala Explorer</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#" style="margin-left:10px;padding:7px;">Sign Up</a>
-                  </li>
-                  
-                </ul>
-              </div>
-            </div>
-          </nav>
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        
-      <!-- Nav bar ends here -->
+
+          <div class="navbar-header">
+            <a class="navbar-brand"href=""><img src="./images/logo.jpg" class="img-responsive logo "></a>
+
+
+          </div>
+
+
+
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="margin-left:10px;padding:7px;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html" style="margin-left:10px;padding:7px;">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="kerala-explorer.html" style="margin-left:10px;padding:7px;">kerala Explorer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="signup.html" style="margin-left:10px;padding:7px;">Sign Up</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+                        </nav>
+
+    
+                        <!-- Nav bar ends here -->
 
 
       
      
         
-        <form class="row g-3"style="margin:2%;padding: 1px;background-color:green;color:yellow">
+        <form class="row g-3"style="margin:2%;padding: 10px;background-color:cyan;color:brown;border-radius:1%;">
+            <div class="col-md-6">
+              <label for="inputName4" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="inputName4">
+            </div>
+
             <div class="col-md-6">
               <label for="inputEmail4" class="form-label">Email</label>
               <input type="email" class="form-control" id="inputEmail4">
             </div>
-            <div class="col-md-6">
+
+            
+    
+            <div class="col-md-6"style="float: left;">
               <label for="inputPassword4" class="form-label">Password</label>
               <input type="password" class="form-control" id="inputPassword4">
             </div>
-            <div class="col-12">
-              <label for="inputAddress" class="form-label">Address</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+
+            <div class="col-md-6"style="float: left;">
+              <label for="inputPasswordrepeat4" class="form-label">Repeat Password</label>
+              <input type="password" class="form-control" id="inputPasswordrepeat4">
+            </div>
+
+
+            <div class="col-6">
+              <label for="inputPhone" class="form-label">Phone Number</label>
+              <input type="text" class="form-control" id="inputPhone" placeholder="Enter Phone Number">
             </div>
             <div class="col-12">
-              <label for="inputAddress2" class="form-label">Address 2</label>
-              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+              <label for="inputAddress" class="form-label">Address </label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Apartment, studio, or floor">
             </div>
             <div class="col-md-6">
               <label for="inputCity" class="form-label">City</label>
@@ -101,8 +127,8 @@
               </select>
             </div>
             <div class="col-md-2">
-              <label for="inputZip" class="form-label">Zip</label>
-              <input type="text" class="form-control" id="inputZip">
+              <label for="inputPIN" class="form-label">PIN</label>
+              <input type="text" class="form-control" id="inputPIN">
             </div>
             <div class="col-12">
               <div class="form-check">
@@ -113,7 +139,7 @@
               </div>
             </div>
             <div class="col-12">
-              <button type="submit" class="btn btn-primary">Sign in</button>
+              <button type="submit" class="btn btn-primary">Sign Up</button>
             </div>
           </form>
          

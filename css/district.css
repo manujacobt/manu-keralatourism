@@ -1,0 +1,14 @@
+.mydiv {
+        color:black;
+        animation: myanimation 10s infinite;
+  }
+  
+  @keyframes myanimation {
+    0% {color: cyan;}
+    
+    25%{color:black;}
+    50%{color:red;}
+    75%{color:greenyellow;}
+    
+    100% {color:cyan;}
+  }
