@@ -1,10 +1,17 @@
 .myMargin{
-    margin-top: -22%;
-    margin-left: 2%;
+    margin-top: -45%;
+    margin-left: 90%;
     /* float: :right; */
-    margin-left: 45%;
+    margin-left: 55%;
+    align-items: ;
     /* border: 3px solid red;
     height: fit-content; */
+}
+
+.newForm{
+    margin-left: 5%;
+    padding-left: 3%;
+    padding-top: 5%;
 }
 
 .logo{

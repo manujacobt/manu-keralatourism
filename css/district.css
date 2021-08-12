@@ -1,5 +1,6 @@
 .mydiv {
-        color:black;
+  height: 50vw;
+    background-size: cover;
         animation: myanimation 10s infinite;
   }
   
