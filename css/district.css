@@ -4,6 +4,11 @@
         animation: myanimation 10s infinite;
   }
   
+  .mydiv p{
+    
+
+  }
+
   @keyframes myanimation {
     0% {color: cyan;}
     
