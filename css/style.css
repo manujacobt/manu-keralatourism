@@ -1,19 +1,23 @@
 .myMargin{
-    margin-left: 35%;
-    margin-top: -30%;
-    margin-right: 3%;
+    margin-left: 35vw;
+    margin-top: -28vw;
+    margin-right: 3vw;
     float: right;
-    border: 3px solid red;
+    border: 0.3vw solid red;
+}
+
+.myMargin1{
+  margin-left: 3vw;
+    margin-top: 2vh;
+    margin-right: 50vw;
+    border: 0.3vw solid red;
+    
 }
 
 
-/* .myContent{
-    margin-top: -46%;
-    margin-left: 50%;
-    margin-right: 2%;
 
-}
- */
+
+ 
 
  .logo{
   height: 50px;
