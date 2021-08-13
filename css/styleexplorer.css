@@ -8,6 +8,13 @@
     
 }
 
+.logo{
+  height: 50px;
+  padding-right: 15px;
+  padding-left: 10px;
+}
+
+
 .myRef a{
     color: red;
     text-decoration: none;
@@ -33,6 +40,10 @@
 .navbar-nav{
     margin-left: 2%;
     padding: 4px;
+}
+
+.mydiv h1{
+  text-transform: uppercase;
 }
 
 .mydiv{

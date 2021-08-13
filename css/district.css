@@ -9,6 +9,13 @@
 
   }
 
+  .logo{
+    height: 50px;
+    padding-right: 15px;
+    padding-left: 10px;
+  }
+  
+
   @keyframes myanimation {
     0% {color: cyan;}
     
