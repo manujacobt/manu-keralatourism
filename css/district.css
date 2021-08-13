@@ -1,13 +1,10 @@
 .mydiv {
-  height: 50vw;
+  height: 45vw;
     background-size: cover;
         animation: myanimation 10s infinite;
   }
   
-  .mydiv p{
-    
-
-  }
+  
 
   .logo{
     height: 50px;
