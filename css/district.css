@@ -1,5 +1,6 @@
 .mydiv {
   height: 45vw;
+  text-transform: uppercase;
     background-size: cover;
         animation: myanimation 10s infinite;
   }
