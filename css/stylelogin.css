@@ -1,14 +1,16 @@
 
 
 .myForm{
-    height: 60vh;
-    background-color: white;
+    /* height: 60vh;
+    background-color: white; */
     margin-left: 20vw;
     margin-right: 20vw;
     padding-top: 3vh;
-    color: green;
+    color: black;
    padding: 2vw;
 }
+
+
 
 h1{
     text-align: center;
