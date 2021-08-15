@@ -5,6 +5,14 @@
         animation: myanimation 10s infinite;
   }
   
+  .myPhoto{
+    height: 25vw;
+    margin-left: 3vw;
+    float:left;
+    margin-top:2vw;
+    border: 0.5vw solid black;
+    
+  }
   
 
   .logo{
