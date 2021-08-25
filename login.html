@@ -25,6 +25,7 @@
 </head>
 
 <body >
+ 
 
     <div class="mydiv container-fluid col-lg-12 col-md-12 col-sm-12 col-12"style="background-color:cyan; ">
 
@@ -77,21 +78,36 @@
             <!-- form starts here -->
 
             <div class="myForm">
-            <form >
-              <div class="mb-3">
+            <form action="index.html" onsubmit="return validate();">
+              <div class="mb-3 mail1">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text"style="color:red">We'll never share your email with anyone else.</div>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"onkeyup="return mailvalidate();">
+                <div id="emailHelp" class="form-text"style="color:grey">We'll never share your email with anyone else.</div>
               </div>
+
+             
+              <label for="error" id="error"></label>
+              
+
               <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+                <div class="pw-meter mb-3">
+                  <div class="form-element">
+    <label for="password">Password</label>
+    <input type="password" id="password">
+    <div class="pw-display-toggle-btn">
+      <i class="fa fa-eye"></i>
+      <i class="fa fa-eye-slash"></i>
+    </div>
+    <div class="pw-strength">
+      <span>Weak</span>
+      <span></span>
+    </div>
+  </div>
+</div>
               </div>
-              <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              
+              <button type="submit" class="btn btn-primary" id="but">Submit</button>
+              <script src="JS/form.js"></script>
             </form>
           </div>
                
@@ -107,7 +123,7 @@
      
 
         
-<footer style="font-size:1.5vw;text-align: center;padding: 2px;color: red;margin-top:5vh;font-weight: bold;background:white;">
+<footer style="text-align: center;padding: 2px;color: red;margin-top:9vh;font-weight: bold;background:white;position:relative;">
   Copyright 2020
 </footer>
 
