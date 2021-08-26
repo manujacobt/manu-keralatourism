@@ -43,7 +43,7 @@ function getPasswordStrength(password){
     if(password.length > 7){
       s++;
     }
-    if(/[A-Z]/.test(password)){
+    if((/[A-Z]/.test(password))&& (/[a-z]/.test(password))){
       s++;
     }
     if(/[0-9]/.test(password)){

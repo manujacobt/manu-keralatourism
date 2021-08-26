@@ -61,8 +61,8 @@ h1{
   .mail1{
     position:relative;
     top:10vh;
-    left:50%;
-    
+    left:26vw;
+    border-radius: 5px;
     transform:translate(-50%,-50%);
     width:350px;
     background:white;
@@ -73,7 +73,7 @@ h1{
   #error{
     position:relative;
     top:-4vh;
-    left:50%;
+    left:26vw;
         transform:translate(-50%,-50%);
     width:350px;
     background:white;
@@ -85,9 +85,10 @@ h1{
   .pw-meter {
     position:relative;
     top:1vh;
-    left:50%;
+    left:26vw;
     transform:translate(-50%,-50%);
     width:350px;
+    border-radius: 5px;
     background:white;
     padding:20px;
     padding-bottom: 40px;
@@ -171,7 +172,7 @@ h1{
   #but{
     position:relative;
     top:1vh;
-    left:50%;
+    left:26vw;
     transform:translate(-50%,-50%);
     width:350px;
     background:blue;
