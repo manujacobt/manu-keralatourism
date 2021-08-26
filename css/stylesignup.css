@@ -1,7 +1,7 @@
 .myMargin{
     margin-top: 7%;
     margin-left: 2%;
-    float: :left;
+    float :left;
     border: 3px solid red;
     height: fit-content;
 }
@@ -20,4 +20,152 @@
       
   }
 
+  .mail1{
+    position:relative;
+    top:10vh;
+    left:50%;
+    
+    transform:translate(-50%,-50%);
+    width:350px;
+    background:#fff;
+    padding:20px;
+    padding-bottom: 30px;
+    
+  }
+ 
+  
+  .pw-meter {
+    position:relative;
+    top:1vh;
+        /* width:40vw; */
+    background:cyan;
+    padding:0px;
+    padding-bottom: 40px;
+    /*  */
+  }
+
+  #password{
+    border-radius: 5px;
+  }
+
+  .pw-meter h2 {
+    margin:10px 0px 30px;
+    font-size:20px;
+    color:#111;
+    text-align:center;
+  }
+  .pw-meter .form-element {
+    position:relative;
+  }
+  .pw-meter label {
+    display:block;
+    margin-bottom:8px;
+    color:#111;
+  }
+  .pw-meter input {
+    padding:8px 30px 8px 10px;
+    width:100%;
+    font-size:16px;
+    border:1px solid #bbb;
+    outline:none;
+  }
+  .pw-meter .pw-display-toggle-btn {
+    position:absolute;
+    right:10px;
+    top:35px;
+    width:20px;
+    height:20px;
+    text-align:center;
+    line-height:20px;
+    cursor:pointer;
+  }
+  .pw-meter .pw-display-toggle-btn i.fa-eye-slash {
+    display:none;
+  }
+  .pw-meter .pw-display-toggle-btn.active i.fa-eye-slash {
+    display:block;
+  }
+  .pw-meter .pw-display-toggle-btn.active i.fa-eye {
+    display:none;
+  }
+  .pw-meter .pw-strength {
+    position:absolute;    
+    width:100%;         /* Adjust width of strength bar*/
+    height:20px;
+    margin-top:10px;
+    text-align:center;
+    border-radius: 5px;
+    background:white;
+    display:none;
+  }
+  .pw-meter .pw-strength span:nth-child(1) {
+    position:absolute;
+    font-size:13px;
+    color:#111;
+    z-index:2;
+    font-weight:600;
+  }
+  .pw-meter .pw-strength span:nth-child(2) {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:0%;
+    height:100%;
+    border-radius:5px;
+    z-index:1;
+    transition:all 300ms ease-in-out;
+  }
+  #rptlabel{
+    top: 1vh;
+    left:5vh;
+
+  }
+    
+  
+
+  #pwdrpt{
+    position:relative;
+    top:1vh;
+    
+        
+    /* transform:translate(-50%,-50%); */
+    width:40vw;
+    background:white;
+    padding:5px;
+   
+  }
+
+  #error{
+    position:relative;
+    top:2vh;
+    
+        /* transform:translate(-50%,-50%); */
+    width:250px;
+    background:cyan;
+    padding:0px; 
+    /* text-align: center;     */
+
+  } 
+  #numb{
+    top:1vh;
+  }
+ #inputPhone{
+margin-top: 1vh;
+
+ }
+ 
+
+
+  #but{
+    position:relative;
+    top:1vh;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:350px;
+    background:blue;
+    padding:10px;
+    
+
+  }
+  
 

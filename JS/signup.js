@@ -1,5 +1,6 @@
 let email=document.getElementById("email");
-let pwd=document.getElementById("pwd");
+let pwd=document.getElementById("password");
+let pwdrpt=document.getElementById("pwdrpt");
 let error=document.getElementById("error");
 
 
@@ -12,30 +13,32 @@ var flag2=0;
 
 function mailvalidate(){
 
-    if(email.value.trim()!=""){
+    
 
         var regexp = /^([A-Za-z0-9\.-]+)@([A-Za-z0-9]+).([a-z]{2,3})(.[a-z]{2,3})?$/ //here [A-Za-z0-9 and underscore] can be replaced by [\w]
         
         if(regexp.test(email.value) ){
-            error.innerHTML="valid email";
-            error.style.color="green";
-            flag=1;
+          flag=1;
+            // mail.innerHTML="valid email";
+            // mail.style.color="green";
+            console.log("flag="+flag);
+            return true;
             
         }
         else {
-            error.innerHTML="Invalid email";
-            error.style.color="red";
+            // error.innerHTML="Invalid email";
+            // error.style.color="red";
             flag=0;   
+            console.log("flag="+flag);
+            return false;
             
         }
-            }
-            else{
-                alert("email cannot be empty")
+           
                 
                      
             }
 
-}
+
 
 function getPasswordStrength(password){
     let s = 0;
@@ -45,15 +48,17 @@ function getPasswordStrength(password){
     if(password.length > 7){
       s++;
     }
-    if(/[A-Z]/.test(password)){
+    if((/[A-Z]/.test(password))&& (/[a-z]/.test(password))){
       s++;
     }
     if(/[0-9]/.test(password)){
       s++;
     }
+    
+    
     if(/[^A-Za-z0-9]/.test(password)){
       s++;
-    }
+         }
     return s;
   }
   document.querySelector(".pw-meter #password").addEventListener("focus",function(){
@@ -77,13 +82,13 @@ function getPasswordStrength(password){
     strength = Math.max(strength,1);
     passwordStrengthSpans[1].style.width = strength*20 + "%";
     if(strength < 2){
-      passwordStrengthSpans[0].innerText = "Weak";
+      passwordStrengthSpans[0].innerText = "poor";
       passwordStrengthSpans[0].style.color = "#111";
       passwordStrengthSpans[1].style.background = "#d13636";
     } else if(strength >= 2 && strength <= 4){
       passwordStrengthSpans[0].innerText = "Medium";
       passwordStrengthSpans[0].style.color = "#111";
-      passwordStrengthSpans[1].style.background = "#e6da44";
+      passwordStrengthSpans[1].style.background = "orange";
     } else {
       passwordStrengthSpans[0].innerText = "Strong";
       passwordStrengthSpans[0].style.color = "#fff";
@@ -93,21 +98,40 @@ function getPasswordStrength(password){
   });
 
   
+  function pwdrptval(){
+      if(pwd.value!=pwdrpt.value){
+                    error.innerHTML="passwords does not match";
+          error.style.color="red";
+          flag2=0;
+          return false;
+      }
+      else{
+                  error.innerHTML="passwords matches";
+            error.style.color="green";
+            flag2=1;
+            return true;
+}
+      }
+
+
+  
 
 function validate(){
     
 
 
+console.log("flag="+flag);
+console.log("flag1="+flag1);
+console.log("flag2="+flag2);
 
-
-if ((flag==1)&&(flag1==1)){
+if ( (flag==1) && (flag1==1) && (flag2==1) ) {
     
     
         return true;
 }
-else {
-    return false;
-    
+
+else{
+  return false;
 }
 
 

@@ -28,6 +28,7 @@
 </head>
 
 <body >
+  
 
     <div class="container-fluid"style="background-color:cyan;">
 
@@ -81,32 +82,55 @@
       
      
         
-        <form class="row g-3"style="margin:2%;padding: 10px;background-color:cyan;color:brown;border-radius:1%;">
-            <div class="col-md-6">
+        <form action="login.html" onsubmit="return validate();" class="row g-3"style="margin:2%;padding: 10px;background-color:cyan;color:black;border-radius:1%;">
+          
+         
+          
+          <div class="col-md-6">
               <label for="inputName4" class="form-label">Full Name</label>
               <input type="text" class="form-control" id="inputName4">
             </div>
 
             <div class="col-md-6">
               <label for="inputEmail4" class="form-label">Email</label>
-              <input type="email" class="form-control" id="inputEmail4">
+              <input type="email" class="form-control" id="email" onkeyup="return mailvalidate();">
             </div>
 
             
     
             <div class="col-md-6"style="float: left;">
-              <label for="inputPassword4" class="form-label">Password</label>
-              <input type="password" class="form-control" id="inputPassword4">
+              
+              
+                <div class="pw-meter mb-3">
+                  <div class="form-element">
+    <label for="password">Password</label>
+    <input type="password" id="password">
+    <div class="pw-display-toggle-btn">
+      <i class="fa fa-eye"></i>
+      <i class="fa fa-eye-slash"></i>
+    </div>
+    <div class="pw-strength">
+      <span>Weak</span>
+      <span></span>
+    </div>
+  </div>
+</div>
+              
+              
             </div>
 
             <div class="col-md-6"style="float: left;">
-              <label for="inputPasswordrepeat4" class="form-label">Repeat Password</label>
-              <input type="password" class="form-control" id="inputPasswordrepeat4">
+              <label for="inputPasswordrepeat4" class="form-label"id="rptlabel">Repeat Password</label>
+              <input type="password" class="form-control" id="pwdrpt"onkeyup="return pwdrptval();">
+            
+              <label for="error" id="error"></label>
             </div>
+
+            
 
 
             <div class="col-6">
-              <label for="inputPhone" class="form-label">Phone Number</label>
+              <label for="inputPhone" class="form-label"id="numb">Phone Number</label>
               <input type="tel" class="form-control" id="inputPhone" placeholder="Enter Phone Number">
             </div>
             <div class="col-12">
@@ -139,6 +163,9 @@
             <div class="col-12">
               <button type="submit" class="btn btn-primary">Sign Up</button>
             </div>
+          
+            <script src="JS/signup.js"></script>
+          
           </form>
 
 
