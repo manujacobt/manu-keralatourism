@@ -78,13 +78,14 @@ h1{
   }
   .form-label{
     text-align: left;
+    margin-bottom: 30px;
   }
   
 
   
   .pw-meter {
     position:relative;
-    top:-6vh;
+    top:-7vh;
     text-align: left;
        /* left:50%; */
     /* transform:translate(-50%,-50%); */
