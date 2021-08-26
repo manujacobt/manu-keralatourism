@@ -129,18 +129,19 @@
     
         
     /* transform:translate(-50%,-50%); */
-    width:40vw;
+    /* width:40vw; */
     background:white;
-    padding:5px;
+    padding:8px;
    
   }
 
   #error{
     position:relative;
     top:2vh;
+    margin-left: 5%;
     
         /* transform:translate(-50%,-50%); */
-    width:250px;
+    /* width:250px; */
     background:cyan;
     padding:0px; 
     /* text-align: center;     */
