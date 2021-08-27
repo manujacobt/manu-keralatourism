@@ -88,12 +88,12 @@
           
           <div class="col-md-6">
               <label for="inputName4" class="form-label">Full Name</label>
-              <input type="text" class="form-control" id="inputName4">
+              <input type="text" class="form-control" required id="inputName4">
             </div>
 
             <div class="col-md-6">
               <label for="inputEmail4" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" onkeyup="return mailvalidate();">
+              <input type="email" class="form-control" required id="email" onkeyup="return mailvalidate();">
             </div>
 
             
@@ -104,7 +104,7 @@
                 <div class="pw-meter mb-3">
                   <div class="form-element">
     <label for="password">Password</label>
-    <input type="password" id="password">
+    <input type="password" required id="password">
     <div class="pw-display-toggle-btn">
       <i class="fa fa-eye"></i>
       <i class="fa fa-eye-slash"></i>
@@ -121,7 +121,7 @@
 
             <div class="col-md-6"style="float: left;">
               <label for="inputPasswordrepeat4" class="form-label"id="rptlabel">Repeat Password</label>
-              <input type="password" class="form-control" id="pwdrpt"onkeyup="return pwdrptval();">
+              <input type="password" class="form-control" required id="pwdrpt"onkeyup="return pwdrptval();">
             
               <label for="error" id="error"></label>
             </div>
@@ -131,15 +131,17 @@
 
             <div class="col-6">
               <label for="inputPhone" class="form-label"id="numb">Phone Number</label>
-              <input type="tel" class="form-control" id="inputPhone" placeholder="Enter Phone Number">
+              <input type="tel" class="form-control" id="inputPhone" required placeholder="Enter Phone Number"onkeyup="return phonenumber();">
+            
+              <label for="error1" id="error1"></label>
             </div>
             <div class="col-12">
               <label for="inputAddress" class="form-label">Address </label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="Apartment, studio, or floor">
+              <input type="text" class="form-control" id="inputAddress" required placeholder="Apartment, studio, or floor" >
             </div>
             <div class="col-md-6">
               <label for="inputCity" class="form-label">City</label>
-              <input type="text" class="form-control" id="inputCity">
+              <input type="text" class="form-control" required id="inputCity">
             </div>
             <div class="col-md-4">
               <label for="inputState" class="form-label">State</label>
@@ -150,11 +152,13 @@
             </div>
             <div class="col-md-2">
               <label for="inputPIN" class="form-label">PIN</label>
-              <input type="text" class="form-control" id="inputPIN">
+              <input type="text" class="form-control" required id="inputPIN"onkeyup="return pin();">
+
+              <label for="error2" id="error2"></label>
             </div>
             <div class="col-12">
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <input class="form-check-input" type="checkbox" required id="gridCheck">
                 <label class="form-check-label" for="gridCheck">
                   Check me out
                 </label>

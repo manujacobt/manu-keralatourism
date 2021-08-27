@@ -2,11 +2,16 @@ let email=document.getElementById("email");
 let pwd=document.getElementById("password");
 let pwdrpt=document.getElementById("pwdrpt");
 let error=document.getElementById("error");
+let inputPhone=document.getElementById("inputPhone");
+let inputAddress=document.getElementById("inputAddress");
+let inputCity=document.getElementById("inputCity");
+let inputPIN=document.getElementById("inputPIN");
 
 
 var flag=0;
 var flag1=0;
 var flag2=0;
+var flag3=0;
 
 
 
@@ -113,7 +118,41 @@ function getPasswordStrength(password){
 }
       }
 
+      function phonenumber(){  
+        var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;  
+        if((inputPhone.value.match(phoneno))){       
+                error1.innerHTML="Valid phone number";
+          error1.style.color="green";
+          flag3=1
+          return true;        
+        }      
+        else        
+        {
+          error1.innerHTML="Please check the phone number";
+          error1.style.color="red";
+          flag3=0;
+          //         alert("message");      
+            return false;      
+          }
+      }
 
+      
+      
+
+     function pin(){
+        var pin1 = /^([0-9]{6})$/; 
+       if((inputPIN.value.length<7) && (inputPIN.value.match(pin1))){
+           error2.innerHTML="Valid Pincode";
+      error2.style.color="green";
+                 return true;
+         }
+         else 
+         {
+           error2.innerHTML="Invalid Pincode";
+      error2.style.color="red";
+           return false;
+         }
+       }
   
 
 function validate(){
@@ -123,14 +162,21 @@ function validate(){
 console.log("flag="+flag);
 console.log("flag1="+flag1);
 console.log("flag2="+flag2);
+console.log("flag3="+flag3);
 
-if ( (flag==1) && (flag1==1) && (flag2==1) ) {
+
+
+
+
+
+if ( (flag==1) && (flag1==1) && (flag2==1) && (flag3==1)  ) {
     
     
         return true;
 }
 
-else{
+{
+  alert("Check Email, Password and Phone number");
   return false;
 }
 
