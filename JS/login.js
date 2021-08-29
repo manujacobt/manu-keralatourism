@@ -38,19 +38,54 @@ function mailvalidate(){
 function getPasswordStrength(password){
     let s = 0;
     if(password.length > 4){
-      s++;
+      s++;      
+    }
+    else{
+      s--;
     }
     if(password.length > 7){
       s++;
+      eight.style.color="green";
+    }
+    else{
+      eight.style.color="red";
+      s--;
     }
     if((/[A-Z]/.test(password))&& (/[a-z]/.test(password))){
       s++;
     }
+    else{
+      s--;
+    }
+      if(/[A-Z]/.test(password)){
+        uc.style.color="green";
+      }
+      else {
+        uc.style.color="red";
+      }
+      if(/[a-z]/.test(password)){
+        lc.style.color="green";
+      }
+      else{
+        lc.style.color="red";
+      }
+
+    
     if(/[0-9]/.test(password)){
       s++;
+      num.style.color="green";
+    }
+    else{
+      num.style.color="red";
+      s--;
     }
     if(/[^A-Za-z0-9]/.test(password)){
       s++;
+      sp.style.color="green";
+    }
+    else{
+      sp.style.color="red";
+      s--;
     }
     return s;
   }

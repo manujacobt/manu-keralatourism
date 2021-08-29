@@ -29,8 +29,7 @@
     width:350px;
     background:#fff;
     padding:20px;
-    padding-bottom: 30px;
-    
+        
   }
   #error0{
     position:relative;
@@ -50,8 +49,8 @@
     top:0vh;
         /* width:40vw; */
     background:cyan;
-    padding:0px;
-    padding-bottom: 55px;
+    padding:1px;
+    
     /*  */
   }
 
@@ -101,9 +100,11 @@
   }
   .pw-meter .pw-strength {
     position:absolute;    
-    width:100%;         /* Adjust width of strength bar*/
+    width:70%;         /* Adjust width of strength bar*/
+    left: 15%;
+    right: 15%;
     height:20px;
-    margin-top:10px;
+    margin-top:5px;
     text-align:center;
     border-radius: 5px;
     background:white;
@@ -130,9 +131,10 @@
   #p1{
     position: relative;
     font-weight: bold;
-    color: red;   
-   top: 3vh;
+    color:white;   
+   margin-top: 4vh;
       text-align: center;
+      margin-bottom: -3vh;
         
    
   }

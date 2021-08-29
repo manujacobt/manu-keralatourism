@@ -6,6 +6,15 @@ let inputPhone=document.getElementById("inputPhone");
 let inputAddress=document.getElementById("inputAddress");
 let inputCity=document.getElementById("inputCity");
 let inputPIN=document.getElementById("inputPIN");
+let eight=document.getElementById("eight");
+let num=document.getElementById("num");
+let lc=document.getElementById("lc");
+let uc=document.getElementById("uc");
+let sp=document.getElementById("sp");
+
+
+
+
 
 
 var flag=0;
@@ -46,26 +55,57 @@ function mailvalidate(){
 
 
 function getPasswordStrength(password){
-    let s = 0;
-    if(password.length > 4){
-      s++;
-    }
-    if(password.length > 7){
-      s++;
-    }
-    if((/[A-Z]/.test(password))&& (/[a-z]/.test(password))){
-      s++;
-    }
-    if(/[0-9]/.test(password)){
-      s++;
-    }
-    
-    
-    if(/[^A-Za-z0-9]/.test(password)){
-      s++;
-         }
-    return s;
+  let s = 0;
+  if(password.length > 4){
+    s++;      
   }
+  else{
+    
+  }
+  if(password.length > 7){
+    s++;
+    eight.style.color="green";
+  }
+  else{
+    eight.style.color="red";
+    
+  }
+  if((/[A-Z]/.test(password))&& (/[a-z]/.test(password))){
+    s++;
+  }
+  
+    if(/[A-Z]/.test(password)){
+      uc.style.color="green";
+    }
+    else {
+      uc.style.color="red";
+    }
+    if(/[a-z]/.test(password)){
+      lc.style.color="green";
+    }
+    else{
+      lc.style.color="red";
+    }
+
+  
+  if(/[0-9]/.test(password)){
+    s++;
+    num.style.color="green";
+  }
+  else{
+    num.style.color="red";
+    
+  }
+  if(/[^A-Za-z0-9]/.test(password)){
+    s++;
+    sp.style.color="green";
+  }
+  else{
+    sp.style.color="red";
+   
+  }
+  return s;
+}
   document.querySelector(".pw-meter #password").addEventListener("focus",function(){
     document.querySelector(".pw-meter .pw-strength").style.display = "block";
   });
