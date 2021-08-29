@@ -78,15 +78,18 @@ function getPasswordStrength(password){
       passwordStrengthSpans[0].innerText = "poor";
       passwordStrengthSpans[0].style.color = "#111";
       passwordStrengthSpans[1].style.background = "#d13636";
+      p1.style.color="red";
     } else if(strength >= 2 && strength <= 4){
       passwordStrengthSpans[0].innerText = "Medium";
       passwordStrengthSpans[0].style.color = "#111";
       passwordStrengthSpans[1].style.background = "orange";
+      p1.style.color="red";
     } else {
       passwordStrengthSpans[0].innerText = "Strong";
       passwordStrengthSpans[0].style.color = "#fff";
       passwordStrengthSpans[1].style.background = "#20a820";
       flag1=1;
+      p1.style.color="green";
     }
   });
 

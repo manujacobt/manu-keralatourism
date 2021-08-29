@@ -22,7 +22,7 @@
 
   .mail1{
     position:relative;
-    top:10vh;
+    top:5vh;
     left:50%;
     
     transform:translate(-50%,-50%);
@@ -47,11 +47,11 @@
   
   .pw-meter {
     position:relative;
-    top:1vh;
+    top:0vh;
         /* width:40vw; */
     background:cyan;
     padding:0px;
-    padding-bottom: 40px;
+    padding-bottom: 55px;
     /*  */
   }
 
@@ -129,8 +129,11 @@
 
   #p1{
     position: relative;
-   background: yellow;
-   margin-bottom: 2vh;
+    font-weight: bold;
+    color: red;   
+   top: 3vh;
+      text-align: center;
+        
    
   }
 
@@ -144,7 +147,7 @@
 
   #pwdrpt{
     position:relative;
-    top:1vh;
+    top:0vh;
     
         
     /* transform:translate(-50%,-50%); */
@@ -174,11 +177,12 @@
   
   #numb{
     position: relative;
-    top:2vh;
+    top:1vh;
   }
 
  #inputPhone{
-margin-top: 1vh;
+   position: relative;
+margin-top:  3vh;
 
  }
 
@@ -187,7 +191,7 @@ margin-top: 1vh;
   /* top:1vh; */
   text-align: center;
   font-weight: bold;
-  
+  top:1vh;
   background:cyan;
   padding:3px; 
   
@@ -198,7 +202,7 @@ margin-top: 1vh;
   /* top:1vh; */
   text-align: center;
   font-weight: bold;
-  
+  top:1vh;
   background:cyan;
   padding:3px; 
   

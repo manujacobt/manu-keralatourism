@@ -163,12 +163,13 @@ h1{
    top:-9vh;
    width: 350px;
    text-align: center;
-   background: yellow;
+   color:white;
    padding: 1px;
-   border-radius: 6px;
+   border-radius: 6px;  
    
    margin-right: auto;
    margin-left: auto;
+   
   }
 
  
@@ -176,7 +177,7 @@ h1{
 
   #but{
     position:relative;
-    top:-10vh;
+    top:-7vh;
        /* left:50%; */
     /* transform:translate(-50%,-50%); */
     width:350px;
@@ -190,7 +191,7 @@ h1{
   .needSignup{
     position: relative;
     text-align: center;
-    margin-top: -12vh;
+    margin-top: -7vh;
   }
   .needSignup a{
     text-decoration: none;
