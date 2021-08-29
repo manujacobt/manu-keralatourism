@@ -100,9 +100,9 @@
   }
   .pw-meter .pw-strength {
     position:absolute;    
-    width:70%;         /* Adjust width of strength bar*/
-    left: 15%;
-    right: 15%;
+    width:100%;         /* Adjust width of strength bar*/
+    /* left: 15%;
+    right: 15%; */
     height:20px;
     margin-top:5px;
     text-align:center;
@@ -134,7 +134,7 @@
     color:white;   
    margin-top: 4vh;
       text-align: center;
-      margin-bottom: -3vh;
+      margin-bottom: 0.5vh;
         
    
   }

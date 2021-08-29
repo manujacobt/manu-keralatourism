@@ -109,7 +109,18 @@ function getPasswordStrength(password){
     let passwordStrengthSpans = document.querySelectorAll(".pw-meter .pw-strength span");
     strength = Math.max(strength,1);
     passwordStrengthSpans[1].style.width = strength*20 + "%";
-    if(strength < 2){
+    if(password.length < 1){
+      passwordStrengthSpans[0].innerText = "weak";
+      passwordStrengthSpans[0].style.color = "black";
+      passwordStrengthSpans[1].style.background = "white";
+      p1.style.color="white";
+      sp.style.color="white";
+      num.style.color="white";
+      lc.style.color="white";
+      uc.style.color="white";
+      eight.style.color="white";
+    }
+    else if(strength < 2){
       passwordStrengthSpans[0].innerText = "poor";
       passwordStrengthSpans[0].style.color = "#111";
       passwordStrengthSpans[1].style.background = "#d13636";
