@@ -15,8 +15,6 @@ let sp=document.getElementById("sp");
 
 
 
-
-
 var flag=0;
 var flag1=0;
 var flag2=0;
@@ -29,7 +27,7 @@ function mailvalidate(){
 
     
 
-        var regexp = /^([A-Za-z0-9\.-]+)@([A-Za-z0-9]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/ //here [A-Za-z0-9 and underscore] can be replaced by [\w]
+        var regexp = /^([A-Za-z0-9\.-]+)@([A-Za-z0-9]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/; //here [A-Za-z0-9 and underscore] can be replaced by [\w]
         
         if(regexp.test(email.value) ){
           flag=1;
@@ -52,21 +50,23 @@ function mailvalidate(){
                      
             }
 
-
+            var regexp1 = /^([A-Za-z0-9\!@$%^&*_]+)$/;
 
 function getPasswordStrength(password){
   let s = 0;
+  
   if(password.length > 4){
     s++;      
   }
   else{
     
   }
-  if(password.length > 7){
+  if((password.length > 7)&&(regexp1.test(pwd.value))){
     s++;
     eight.style.color="green";
   }
   else{
+    s--;
     eight.style.color="red";
     
   }
@@ -126,7 +126,7 @@ function getPasswordStrength(password){
     let passwordStrengthSpans = document.querySelectorAll(".pw-meter .pw-strength span");
     strength = Math.max(strength,1);
     passwordStrengthSpans[1].style.width = strength*20 + "%";
-    if(password.length < 1){
+    if ((password.length < 1) || (pwd.value.trim()=="")){
       passwordStrengthSpans[0].innerText = "weak";
       passwordStrengthSpans[0].style.color = "black";
       passwordStrengthSpans[1].style.background = "white";
@@ -137,22 +137,32 @@ function getPasswordStrength(password){
       uc.style.color="white";
       eight.style.color="white";
     }
-   else if(strength < 2){
+   else if ((strength < 2) &&(regexp1.test(pwd.value))){
       passwordStrengthSpans[0].innerText = "poor";
       passwordStrengthSpans[0].style.color = "#111";
       passwordStrengthSpans[1].style.background = "#d13636";
       p1.style.color="red";
-    } else if(strength >= 2 && strength <= 4){
+    } else if ((strength >= 2) && (strength <= 4) &&(regexp1.test(pwd.value))){
       passwordStrengthSpans[0].innerText = "Medium";
       passwordStrengthSpans[0].style.color = "#111";
       passwordStrengthSpans[1].style.background = "orange";
       p1.style.color="red";
-    } else {
+    } else if(regexp1.test(pwd.value)){
       passwordStrengthSpans[0].innerText = "Strong";
       passwordStrengthSpans[0].style.color = "#fff";
       passwordStrengthSpans[1].style.background = "#20a820";
       flag1=1;
       p1.style.color="green";
+    }
+    else{
+      p1.style.color="white";
+      sp.style.color="white";
+      num.style.color="white";
+      lc.style.color="white";
+      uc.style.color="white";
+      eight.style.color="white";
+      alert("only Alphabets, numbers and special characters like ! @ # $ % ^ & * _ are allowed");
+      
     }
   });
 
