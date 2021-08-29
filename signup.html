@@ -15,12 +15,14 @@
   <!-- Bootstrap Css and js file dowloaded -->
 
   <link rel="stylesheet" href="./css/bootstrap.min.css">    
-  <script src="./JS/bootstrap.min.js"></script>
+  <script async src="./JS/bootstrap.min.js"></script>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script async src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
-  <!-- End Bootstrap Css and js file   -->  
+<script defer src="JS/signup.js"></script>
+
+<!-- End Bootstrap Css and js file   -->  
 
 
 
@@ -87,7 +89,7 @@
          
           
           <div class="col-md-6">
-              <label for="inputName4" class="form-label">Full Name</label>
+              <label for="inputName4" class="form-label">User Name</label>
               <input type="text" class="form-control" required id="inputName4">
             </div>
 
@@ -113,6 +115,9 @@
     <div class="pw-strength">
       <span>Weak</span>
       <span></span>
+      <br>
+      <p id="p1">password must contain Uppercase, Lowercase, Number and special character</p>
+
     </div>
   </div>
 </div>
@@ -127,7 +132,7 @@
               <label for="error" id="error"></label>
             </div>
 
-            
+
 
 
             <div class="col-6">
@@ -155,8 +160,8 @@
                   <option value="Bihar">Bihar</option>
                   <option value="Chandigarh">Chandigarh</option>
                   <option value="Chhattisgarh">Chhattisgarh</option>
-                  <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
-                  <option value="Daman and Diu">Daman and Diu</option>
+                  <option value="Dadar and Nagar Haveli Daman and Diu">Dadar and Nagar Haveli and Daman and Diu </option>
+                 
                   <option value="Delhi">Delhi</option>
                   <option value="Lakshadweep">Lakshadweep</option>
                   <option value="Puducherry">Puducherry</option>
@@ -168,6 +173,7 @@
                   <option value="Jharkhand">Jharkhand</option>
                   <option value="Karnataka">Karnataka</option>
                   <option value="Kerala">Kerala</option>
+                  <option value="Kerala">Ladakh</option>
                   <option value="Madhya Pradesh">Madhya Pradesh</option>
                   <option value="Maharashtra">Maharashtra</option>
                   <option value="Manipur">Manipur</option>
@@ -208,7 +214,7 @@
               <button type="submit" class="btn btn-primary">Sign Up</button>
             </div>
           
-            <script src="JS/signup.js"></script>
+            
           
           </form>
 

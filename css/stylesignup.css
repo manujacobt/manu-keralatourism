@@ -32,6 +32,17 @@
     padding-bottom: 30px;
     
   }
+  #error0{
+    position:relative;
+    top:1vh;
+    text-align: center;
+    font-weight: bold;
+    
+    background:cyan;
+    padding:3px; 
+    margin-bottom: 3vh;
+    
+  } 
  
   
   .pw-meter {
@@ -115,6 +126,14 @@
     z-index:1;
     transition:all 300ms ease-in-out;
   }
+
+  #p1{
+    position: relative;
+   background: yellow;
+   margin-bottom: 2vh;
+   
+  }
+
   #rptlabel{
     top: 1vh;
     left:5vh;
@@ -137,24 +156,53 @@
 
   #error{
     position:relative;
-    top:2vh;
-    
+    top:1.5vh;
+    text-align: center;
+    font-weight: bold;
     
         /* transform:translate(-50%,-50%); */
     /* width:250px; */
     background:cyan;
-    padding:0px; 
+    padding:3px; 
     /* text-align: center;     */
 
   } 
+
+ 
+
+
+  
   #numb{
-    top:1vh;
+    position: relative;
+    top:2vh;
   }
+
  #inputPhone{
 margin-top: 1vh;
 
  }
+
+ #error1{
+  position:relative;
+  /* top:1vh; */
+  text-align: center;
+  font-weight: bold;
+  
+  background:cyan;
+  padding:3px; 
+  
+} 
  
+#error2{
+  position:relative;
+  /* top:1vh; */
+  text-align: center;
+  font-weight: bold;
+  
+  background:cyan;
+  padding:3px; 
+  
+} 
 
 
   #but{
