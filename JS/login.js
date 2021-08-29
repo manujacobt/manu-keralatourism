@@ -37,7 +37,7 @@ function mailvalidate(){
 
 function getPasswordStrength(password){
     let s = 0;
-    if(password.length > 6){
+    if(password.length > 4){
       s++;
     }
     if(password.length > 7){
