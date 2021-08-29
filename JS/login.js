@@ -37,16 +37,22 @@ function mailvalidate(){
 
 function getPasswordStrength(password){
     let s = 0;
+
+   
+    
+    
     if(password.length > 4){
       s++;      
     }
     else{
       s--;
     }
+
+    
     if(password.length > 7){
       s++;
       eight.style.color="green";
-    }
+    }    
     else{
       eight.style.color="red";
       s--;
@@ -79,7 +85,7 @@ function getPasswordStrength(password){
       num.style.color="red";
       s--;
     }
-    if(/[^A-Za-z0-9]/.test(password)){
+    if(/[!@#$%^&*_]/.test(password)){
       s++;
       sp.style.color="green";
     }
@@ -88,6 +94,7 @@ function getPasswordStrength(password){
       s--;
     }
     return s;
+
   }
   document.querySelector(".pw-meter #password").addEventListener("focus",function(){
     document.querySelector(".pw-meter .pw-strength").style.display = "block";
@@ -137,9 +144,11 @@ function getPasswordStrength(password){
       flag1=1;
       p1.style.color="green";
     }
+  
+
   });
 
-  
+
 
 function validate(){
     

@@ -96,7 +96,7 @@ function getPasswordStrength(password){
     num.style.color="red";
     
   }
-  if(/[^A-Za-z0-9]/.test(password)){
+  if(/[!@#$%^&*_]/.test(password)){
     s++;
     sp.style.color="green";
   }
