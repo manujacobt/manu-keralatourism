@@ -42,7 +42,7 @@ function mailvalidate(){
 
 
 
-            var regexp1 = /^([A-Za-z0-9\!@$%^&*_]+)$/;
+            var regexp1 = /^([A-Za-z0-9!@#$%^&*_]+)$/;
 
             function getPasswordStrength(password){
               let s = 0;
