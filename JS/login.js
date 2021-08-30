@@ -21,7 +21,7 @@ function mailvalidate(){
 
     
 
-        var regexp = /^([A-Za-z0-9\.-]+)@([A-Za-z0-9]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/ //here [A-Za-z0-9 and underscore] can be replaced by [\w]
+        var regexp = /^([A-Za-z0-9]+)([\.\-_A-Za-z0-9])([A-Za-z0-9]+)@([A-Za-z0-9]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/ //here [A-Za-z0-9 and underscore] can be replaced by [\w]
         
         if(regexp.test(email.value) ){
             error.innerHTML="valid email";
