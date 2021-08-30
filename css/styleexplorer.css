@@ -11,6 +11,8 @@
   font-size: 1.5vw;
 } */
 
+
+
 .logo{
   height: 50px;
   padding-right: 15px;
@@ -26,10 +28,10 @@
     height:100%;
     color:black;
     font-weight:bold;
-    animation: myanimation 10s infinite;
+    animation: myanimation1 10s infinite;
   }
   
-  @keyframes myanimation {
+  @keyframes myanimation1 {
     0% {color:black;}
     /* 25%{background-color:white;} */
     25%{color:red;}
@@ -45,14 +47,14 @@
     padding: 4px;
 }
 
-.mydiv h1{
+.mydiv1 h1{
   text-transform: uppercase;
 }
 
 .mydiv{
   font-weight: bolder;
   font-size: large;
-  background-color: greenyellow;
+  
     /* text-decoration: none; */
     text-align: center;
     margin-left: 24%;
@@ -68,10 +70,15 @@
   
   @keyframes myanimation {
     0% {color:black;}
+    0% {background-color: aquamarine;}
     25%{color:red;}
+    
     50%{color: ivory;}
+    50%{background-color: black;}
     75%{color:red;}
     100%{color:black;}
+    100%{background-color:aquamarine;}            
+  
     
   }
 

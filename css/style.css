@@ -47,10 +47,11 @@ body {
 }
 
 @keyframes myanimation {
-  0% {background-color: cyan;}
-  50%{background-color:grey;}
+  0% {background-color: aquamarine;}
+  
+  50%{background-color:black;}
   50%{color: ivory;}
-  100%{background-color:cyan;}
+  100%{background-color:aquamarine;}
   
 }
 

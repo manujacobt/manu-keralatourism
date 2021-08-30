@@ -17,8 +17,17 @@
       text-align: center;
       font-size: 4vw;
       color:white;
-      
+            
   }
+
+  .mydiv {
+      
+    /* font-weight:bold; */
+   
+    background-color: aquamarine;
+  }
+  
+  
 
   .mail1{
     position:relative;
@@ -37,7 +46,7 @@
     text-align: center;
     font-weight: bold;
     
-    background:cyan;
+    background:aquamarine;
     padding:3px; 
     margin-bottom: 3vh;
     
@@ -48,7 +57,7 @@
     position:relative;
     top:0vh;
         /* width:40vw; */
-    background:cyan;
+    background:aquamarine;
     padding:1px;
     margin-bottom: 2vh;
     
@@ -169,7 +178,7 @@
     
         /* transform:translate(-50%,-50%); */
     /* width:250px; */
-    background:cyan;
+    background:aquamarine;
     padding:3px; 
     /* text-align: center;     */
 
@@ -196,7 +205,7 @@ margin-top:  3vh;
   text-align: center;
   font-weight: bold;
   top:1vh;
-  background:cyan;
+  background:aquamarine;
   padding:3px; 
   
 } 
@@ -207,7 +216,7 @@ margin-top:  3vh;
   text-align: center;
   font-weight: bold;
   top:1vh;
-  background:cyan;
+  background:aquamarine;
   padding:3px; 
   
 } 
