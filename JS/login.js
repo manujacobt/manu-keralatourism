@@ -187,3 +187,12 @@ else{
 
 
 }
+
+email.addEventListener('contextmenu', function (e) {
+  
+  e.preventDefault();
+}, false);
+pwd.addEventListener('contextmenu', function (e) {
+  
+  e.preventDefault();
+}, false);

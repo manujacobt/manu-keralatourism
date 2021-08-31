@@ -255,3 +255,17 @@ if ( (flag==1) && (flag1==1) && (flag2==1) && (flag3==1)  ) {
 
 
 }
+
+
+email.addEventListener('contextmenu', function (e) {
+  
+  e.preventDefault();
+}, false);
+pwd.addEventListener('contextmenu', function (e) {
+  
+  e.preventDefault();
+}, false);
+pwdrpt.addEventListener('contextmenu', function (e) {
+  
+  e.preventDefault();
+}, false);
