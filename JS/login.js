@@ -189,10 +189,10 @@ else{
 }
 
 email.addEventListener('contextmenu', function (e) {
-  
+  alert("Right click not enabled in email");
   e.preventDefault();
 }, false);
 pwd.addEventListener('contextmenu', function (e) {
-  
+  alert("Right click not enabled in password");
   e.preventDefault();
 }, false);
